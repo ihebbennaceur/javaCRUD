@@ -16,8 +16,13 @@ public class Protrajet {
     private JTextField inputdescription;
 
     public Protrajet() {
-
+ //les cases sont trop petit faut resize
         envoyer = new JButton("Envoyer");
+        inputvilledepart = new JTextField(20);
+        inpuvillearrive = new JTextField(20);
+        inputdate = new JTextField(20);
+        inputprix = new JTextField(20);
+        inputdescription = new JTextField(20);
 
         JPanel panel = new JPanel(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
