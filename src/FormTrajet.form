@@ -29,20 +29,20 @@
           <text value="Proposer un trajet"/>
         </properties>
       </component>
-      <component id="5af19" class="javax.swing.JButton" binding="annuler">
+      <component id="5af19" class="javax.swing.JButton" binding="logout">
         <constraints>
           <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Annuler un trajet"/>
+          <text value="logout"/>
         </properties>
       </component>
-      <component id="11bf7" class="javax.swing.JButton" binding="modifier">
+      <component id="11bf7" class="javax.swing.JButton" binding="mestrajets">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Modifier un trajet"/>
+          <text value="mes Trajets"/>
         </properties>
       </component>
       <component id="c15ec" class="javax.swing.JButton" binding="rechercher">

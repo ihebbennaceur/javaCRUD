@@ -90,6 +90,9 @@ public class Protrajet {
                     JOptionPane.showMessageDialog(null, "Le prix est un float");
                 }
 
+                if(!inputdate.getText().matches("\\d{2}-\\d{2}-\\d{4}")) {cond=false;
+                JOptionPane.showMessageDialog(null,"entrer une format date jj--mm--yyyy");}
+
   if (!testvide && cond) {
       Trajet tj = new Trajet();
       tj.setVilledepart(villeDepart);
@@ -121,6 +124,6 @@ public class Protrajet {
 
     public static void main(String[] args) {
         //instance
-        Protrajet protrajet = new Protrajet(3);
+        //Protrajet protrajet = new Protrajet(3);
     }
 }

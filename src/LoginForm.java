@@ -116,7 +116,7 @@ boolean condition2=false;
 
                             // Redirection vers la page suivante ou autre traitement
                             dispose();
-                            FormTrajet formTrajet = new FormTrajet(userId);
+                            FormTrajet formTrajet = new FormTrajet(utilisateur.getId());
                             setVisible(false);
 
 
