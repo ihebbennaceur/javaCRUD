@@ -116,6 +116,8 @@ public class Trajet {
     }
     public static List<Trajet> rechercherTrajets(Connection connexion, String ville) throws SQLException {
         List<Trajet> trajets = new ArrayList<>();
+        //vb trajets contient des elemet de typ trajet
+
         String query = "SELECT * FROM trajets WHERE villedepart LIKE ? OR villearrivee LIKE ?";
         try (PreparedStatement statement = connexion.prepareStatement(query)) {
             statement.setString(1, "%" + ville + "%");
@@ -136,6 +138,7 @@ public class Trajet {
         }
         return trajets;
     }
+
     public static Trajet getTrajetById(Connection connexion, int trajetId) throws SQLException {
         Trajet trajet = null;
         String query = "SELECT * FROM trajets WHERE id = ?";

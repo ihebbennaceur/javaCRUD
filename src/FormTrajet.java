@@ -168,7 +168,7 @@ public class FormTrajet {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                String ville = inputVille.getText(); // Supposons que inputVille est votre champ de saisie pour la ville
+                String ville = inputVille.getText(); //inputVille est votre champ de saisie pour la ville
                 try {
                     Connection connexion = Connexion.getConnection();
                     List<Trajet> trajets = Trajet.rechercherTrajets(connexion, ville);
@@ -177,7 +177,7 @@ public class FormTrajet {
                     // Afficher les trajets trouvés dans une fenêtre de dialogue ou tout autre composant graphique
                     StringBuilder trajetsString = new StringBuilder();
                     for (Trajet trajet : trajets) {
-                        trajetsString.append("ID: ").append(trajet.getId()).append(", Ville de départ: ").append(trajet.getVilledepart()).append(", Ville d'arrivée: ").append(trajet.getvillearrive()).append("\n");
+                        trajetsString.append("ID: ").append(trajet.getId()).append(", Ville de départ: ").append(trajet.getVilledepart()).append(", Ville d'arrivée: ").append(trajet.getvillearrive()).append(trajet.getPrix()).append("\n");
                     }
                     JOptionPane.showMessageDialog(null, trajetsString.toString(), "Résultats de la recherche", JOptionPane.INFORMATION_MESSAGE);
                 } catch (SQLException ex) {
